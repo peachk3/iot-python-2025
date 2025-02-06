@@ -37,3 +37,4 @@ while True:
     print(line.replace('\n', ''))
 
 r.close()
+
