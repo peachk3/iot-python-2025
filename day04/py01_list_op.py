@@ -34,7 +34,7 @@ del(arr[2])
 print(len(arr), arr) # 자리 삭제
 
 ## 리스트 요소 추가
-arr.append(7) # 제일 뒤에 추가
+arr.append(7) # 제일 뒤에 추가 / 리스트 안에 리스트 추가
 print(arr)
 
 arr.insert(2, 100) # n번째 자리에 숫자 입력
@@ -48,7 +48,7 @@ print(arr)
 # replace -> 문자열에서 사용 가능
 
 ## 리스트 합칠때
-print(arr.extend(arr2))
+print(arr.extend(arr2)) # 두 개의 리스트를 하나의 리스트로 합침
 
 ## 리스트 정렬(쇼핑몰 낮은가격순, 높은가격순, 최신일자부터...)
 arr = [6, 7, 1, 3, 9, 0, 2, 8]
@@ -76,3 +76,22 @@ for i in arr:
     sum += i
 
 print(f'{len(arr)}까지의 합산은, {sum}입니다.')
+
+## 추가 설명
+# append() 
+x = ['W', 'Y', 'Z']
+y = ['A', 'C', 'E']
+
+x.append(y)
+print(x)
+print(len(x)) # => 4
+# => ['W', 'Y', 'Z', ['A', 'C', 'E']]
+
+# extend()
+x = ['W', 'Y', 'Z']
+y = ['A', 'C', 'E']
+
+x.extend(y)
+print(x)
+print(len(x)) # => 6
+# => ['W', 'Y', 'Z', 'A', 'C', 'E']
