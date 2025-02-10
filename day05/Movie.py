@@ -26,7 +26,7 @@ class Movie :
             return True
         else:
             return False
-
+        
     # 변수값 가져오기 getter 함수
     def getTitle(self):
         return self.__title
