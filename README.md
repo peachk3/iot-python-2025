@@ -139,12 +139,9 @@ iot 개발자 기초 프로그래밍 언어 리포지토리
         - 내 영화 앱 수정, 마무리
             - 예외 처리 : 영화 입력 - 바로 엔터 입력, 4개의 아이템 입력 X
             - 화면 편집 : 검색, 출력시 테이터 수 표시
-              
-    
-https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
-
-
             
+https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
+     
         - 챗 GPT 윈도우앱(tkinter) 만들기
     
     - 주피터 노트북 학습
