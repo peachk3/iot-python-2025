@@ -24,11 +24,15 @@ def run():
         sel_menu = set_menu()
         if sel_menu == 1:
             # print('영화 입력')
-            movie = set_movie()
-            lst_movie.append(movie)
+            try:
+                movie = set_movie()
+                lst_movie.append(movie)
+                print('영화 입력 완료')
+            except Exception as e: # 프로그램 종료 없이 오류 메세지 출력
+                print(f'다시 입력해주세요 {e}') 
 
         elif sel_menu == 2:
-            print('영화 출력')
+            print('영화 출력\n')
             get_movie(lst_movie)
              
         elif sel_menu == 3:
@@ -40,6 +44,7 @@ def run():
             print('영화 삭제')
             title = input('삭제할 영화명 입력 > ')
             del_movie(lst_movie, title)
+            print('영화 삭제 완료')
 
         elif sel_menu == 5:
             # print('앱 종료')
@@ -54,9 +59,14 @@ def run():
 
 # 영화 검색 함수
 def search_movie(items: list, title: str):
+    count = 0
     for item in items: # item이 Movie 클래스인지 알 수 없음
         if item.isNameContain(title): # 오타발생 위험
+            count += 1 # 검색된 결과 O
             print(item)
+            print('----------')
+    
+    print(f'검색 데이터 수 : {count} 개')
 
 # 영화 삭제 함수
 def del_movie(items: list, title: str):
@@ -108,6 +118,9 @@ def set_movie():
 def get_movie(items: list):
     for item in items: 
         print(item) # Movie 객체
+        print('----------') # 각 영화 아이템별 구분자
+    
+    print(f'총 데이터 수 : {len(items)} 개')
 
 # 메뉴 설정 함수
 def set_menu():
