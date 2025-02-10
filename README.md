@@ -140,7 +140,7 @@ iot 개발자 기초 프로그래밍 언어 리포지토리
             - 예외 처리 : 영화 입력 - 바로 엔터 입력, 4개의 아이템 입력 X
             - 화면 편집 : 검색, 출력시 테이터 수 표시
             
-https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
+    https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
      
     - 주피터노트북 기본사용법
         - 파이썬을 사용, 연구를 목적으로 하는 리포트 작성에 특화된 기술
@@ -148,6 +148,8 @@ https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
         - Ctrl + Shift + p (명령 팔레트) 에서 시작
             - Create : 새 Jupyter 노트북 클릭
             - 무조건 저장 먼저!! (.ipynb)
+        - GUI 학습에는 불합리
+        - 빅데이터분석, 머신러닝, 딥러닝 많이 활용
 
     - GUI 학습(tkinter)
         - GUI(Graphic User Interface) - 그래픽 사용자 인터페이스
@@ -167,3 +169,21 @@ https://github.com/user-attachments/assets/5c8eb794-95ea-4b53-9ddc-55c3ef7469af
             - 안드로이드, iOS 모바일 앱 UI 사용 가능
             - 모바일 특화로 멀티플랫폼 지원
             - 가장 어렵다
+    
+    - Tkinter 학습
+        - 기본 템플릿
+
+        ```python
+        from tkinter import *
+
+        root = Tk()
+        # 이 사이에 위젯, 이벤트 등 작성
+        # Label, Button, Entry, Radiobutton
+        # Checkbutton, Listbox, Frame 등...
+        # 위젯.pack() 필수!!!
+        root.mainloop()
+        ```
+<!-- 주석 -->
+<!-- html에서 사용하는 <img> 태그로 캡쳐한 이미지를 추가 -->
+![py001](./image/py001.png)
+<img src="./image/py001.png" width="400">
