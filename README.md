@@ -186,10 +186,19 @@ iot 개발자 기초 프로그래밍 언어 리포지토리
 <!-- 주석 -->
 <!-- html에서 사용하는 <img> 태그로 캡쳐한 이미지를 추가 -->
 <!-- ![py001](./image/py001.png) -->
-<img src="./image/py001.png" width="400">
+<img src="./image/py001.png" width="400"> 
 
 ## 7일차
 - 파이썬 응용
     - 토이프로젝트
         - ChatGPT 유사앱 - 구글 제미나이 API 사용
-        
+    - 실습
+        - 제미나이 챗앱 -> **클래스 형태**로 변경
+
+    - 실행파일 만들기
+        - `pyinstaller` 모듈 설치
+        - > pip install pyinstaller
+        - > pyinstaller --onefile 파이썬파일명
+        - 같이 실행되는 터미널을 제거하려면
+        - > pyinstaller --onefile --noconsole 파이썬파일명
+        - 아이콘 등의 리소스를 dist 폴더에 복사해야 함

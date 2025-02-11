@@ -56,7 +56,8 @@ root.title('Gemini Chatbot')
 root.geometry('730x450')
 
 # 13. 아이콘 변경
-root.iconbitmap('./image/chatbot.ico')
+# ./image/ 경로는 삭제
+root.iconbitmap('chatbot.ico') # pyinstaller로 실행파일 폴더에 복사
 
 # 7. 전체에서 사용할 폰트 지정 -> 나눔 고딕
 myFont = Font(family='NanumGothic', size=10)
@@ -85,7 +86,7 @@ textResult.tag_configure('ai', font=boldFont, foreground='limegreen')
 textResult.tag_configure('error', font=boldFont, foreground='red')
 
 # 10. 실행 후 바로 입력창에 포커스가 가도록
-textMessage.focus_get()
+textMessage.focus_set()
 
 # 12. 종료버튼(x)를 누르면 종료메시지 확인 후 종료
 root.protocol('WM_DELETE_WINDOW', onClosing) 
