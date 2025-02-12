@@ -217,6 +217,11 @@ iot 개발자 기초 프로그래밍 언어 리포지토리
     
     - 토이 프로젝트
         - 블록깨기 게임
-      
+        - 공의 x축 방향 계산방법 : $x = r \cdot  \cos \theta$
+        - 공의 y축 방향 계산방법 : $y = r \cdot  \sin \theta$
+
+
     https://github.com/user-attachments/assets/e2c932f7-a104-4ead-8b12-a303bb6f9d5d
+
+  
 
