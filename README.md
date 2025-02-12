@@ -217,5 +217,5 @@ iot 개발자 기초 프로그래밍 언어 리포지토리
     
     - 토이 프로젝트
         - 블록깨기 게임
+    https://github.com/user-attachments/assets/e2c932f7-a104-4ead-8b12-a303bb6f9d5d
 
-<!-- <img src="./image/py">        -->
